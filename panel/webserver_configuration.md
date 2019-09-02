@@ -7,6 +7,9 @@ You should remove the default Apache or NGINX configuration as it will expose ap
 users by default.
 :::
 
+## PHP 7.3 Difference
+If you followed the CentOS 7, Debian 9, or Debian 10 web server setup, substitute `fastcgi_pass unix:/run/php/php7.2-fpm.sock` needs to be substituted for `fastcgi_pass unix:/run/php/php7.3-fpm.sock`.
+
 ## NGINX
 You should paste the contents of the file below, replacing `<domain>` with your domain name being used in a file called
 `pterodactyl.conf` and place it in `/etc/nginx/sites-available/`, or &mdash; if on CentOS, `/etc/nginx/conf.d/`.
